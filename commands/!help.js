@@ -79,7 +79,7 @@ if(process.env.owner ===message.author.id || db.get(`ownermd.${message.author.id
     .addField(`\`${prefix}set muterole <rôle>\``, "Définit le rôle muet sur un rôle déjà existant")
 
     .setDescription(`*Les paramètres peuvent être des noms, des mentions, ou des IDs\nSi ce ne sont pas des mentions ils doivent être séparés par \`,,\`*`)
-    .setFooter(`discord.gg/exodedev-fivem • Prefix actuel : ${prefix}`)
+    .setFooter(` • Prefix actuel : ${prefix}`)
 
     
 

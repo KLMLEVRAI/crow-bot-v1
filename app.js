@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
+
 const port = process.env.PORT || 4000;
 
-// Route par défaut
-app.get('/', (req, res) => {
-  res.send('Bot Discord is running!');
+// Endpoint pour le Healthcheck
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
 });
 
-// Lancer le serveur pour satisfaire Render
 app.listen(port, () => {
-  console.log(`Express server is running on port ${port}`);
+    console.log(`App listening on port ${port}`);
 });

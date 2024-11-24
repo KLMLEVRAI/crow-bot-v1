@@ -21,7 +21,7 @@ if(process.env.owner ===message.author.id || db.get(`ownermd.${message.author.id
 
        if (args.length) {
         let str_content = args.join(" ")
-client.user.setPresence({ activity: { name: str_content, type: 1, url: "https://www.twitch.tv/"}})
+client.user.setPresence({ activity: { name: str_content, type: 1, url: "https://www.twitch.tv/twitch"}})
 .then(p => message.channel.send(`Je stream maintenant ${str_content}`))
 .catch(e => { return message.channel.send(`Une erreur a été rencontré.`); });
     } else {
